@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_51384e7e9fe10466d7f687cdada2aad6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_51384e7e9fe10466d7f687cdada2aad6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_51384e7e9fe10466d7f687cdada2aad6 = L.map(
+                "map_51384e7e9fe10466d7f687cdada2aad6",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+
+            
+
+        
+    
+            var tile_layer_2e5b07b763f87fe8df56d7049164c7d8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2e5b07b763f87fe8df56d7049164c7d8.addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var circle_e0714410d5398dc64abc35d9ce391f80 = L.circle(
+                [41.892278, -87.612043],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_ac4ae1b711c53aa1f1eda91505d0a6bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d34a37d492ddf8f42fd6955dc7e1f89 = $(`<div id="html_8d34a37d492ddf8f42fd6955dc7e1f89" style="width: 100.0%; height: 100.0%;">#1 Streeter Dr & Grand Ave → Streeter Dr & Grand Ave (7933 rides)</div>`)[0];
+                popup_ac4ae1b711c53aa1f1eda91505d0a6bc.setContent(html_8d34a37d492ddf8f42fd6955dc7e1f89);
+            
+        
+
+        circle_e0714410d5398dc64abc35d9ce391f80.bindPopup(popup_ac4ae1b711c53aa1f1eda91505d0a6bc)
+        ;
+
+        
+    
+    
+            var marker_4d2a86eb44703441b9c477ba4d1bc576 = L.marker(
+                [41.89215723896365, -87.61191265322879],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_3a3924468f3d41b83809a22892dcda20 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:red\"\u003e\u003cb\u003e1\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_4d2a86eb44703441b9c477ba4d1bc576.setIcon(div_icon_3a3924468f3d41b83809a22892dcda20);
+            
+    
+            var circle_ae1794800cb96a6236c1c76e367cfcf7 = L.circle(
+                [41.880958, -87.616743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_ffc4620b611e8f64418df8c5b105e3fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8f28f59a544efe8c5b83d467269446c = $(`<div id="html_d8f28f59a544efe8c5b83d467269446c" style="width: 100.0%; height: 100.0%;">#2 DuSable Lake Shore Dr & Monroe St → DuSable Lake Shore Dr & Monroe St (6332 rides)</div>`)[0];
+                popup_ffc4620b611e8f64418df8c5b105e3fa.setContent(html_d8f28f59a544efe8c5b83d467269446c);
+            
+        
+
+        circle_ae1794800cb96a6236c1c76e367cfcf7.bindPopup(popup_ffc4620b611e8f64418df8c5b105e3fa)
+        ;
+
+        
+    
+    
+            var marker_d41794addb089847491ce769e92a5051 = L.marker(
+                [41.88092453673981, -87.61674542556156],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_b4e3f0adc330024d59ff6a6fbd0b73c0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:blue\"\u003e\u003cb\u003e2\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d41794addb089847491ce769e92a5051.setIcon(div_icon_b4e3f0adc330024d59ff6a6fbd0b73c0);
+            
+    
+            ant_path_83ce9895174ef849a26719205b40f959 = L.polyline.antPath(
+              [[41.880958, -87.616743], [41.892278, -87.612043]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 6.183032900542039,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_a9091392d319e187f0ec6494517297cd = L.marker(
+                [41.886643390212924, -87.61433963820646],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_8a065603acc4b2a635aa8cf4ddc2182b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:green\"\u003e\u003cb\u003e3\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_6a45c81902ad3662dcf9ec2ed1509959 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcc6041c4555a1c25443f6cbe81228af = $(`<div id="html_fcc6041c4555a1c25443f6cbe81228af" style="width: 100.0%; height: 100.0%;">#3 DuSable Lake Shore Dr & Monroe St → Streeter Dr & Grand Ave (4905 rides)</div>`)[0];
+                popup_6a45c81902ad3662dcf9ec2ed1509959.setContent(html_fcc6041c4555a1c25443f6cbe81228af);
+            
+        
+
+        marker_a9091392d319e187f0ec6494517297cd.bindPopup(popup_6a45c81902ad3662dcf9ec2ed1509959)
+        ;
+
+        
+    
+    
+                marker_a9091392d319e187f0ec6494517297cd.setIcon(div_icon_8a065603acc4b2a635aa8cf4ddc2182b);
+            
+    
+            var circle_d8b3d4b9c76c8dd2d0e76ba89c8f5161 = L.circle(
+                [41.90096039, -87.62377664],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_079cdb73a7a4ea16179632e9a90f1f66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd42fb7b4109060099927f38b0a22d4b = $(`<div id="html_dd42fb7b4109060099927f38b0a22d4b" style="width: 100.0%; height: 100.0%;">#4 Michigan Ave & Oak St → Michigan Ave & Oak St (4087 rides)</div>`)[0];
+                popup_079cdb73a7a4ea16179632e9a90f1f66.setContent(html_dd42fb7b4109060099927f38b0a22d4b);
+            
+        
+
+        circle_d8b3d4b9c76c8dd2d0e76ba89c8f5161.bindPopup(popup_079cdb73a7a4ea16179632e9a90f1f66)
+        ;
+
+        
+    
+    
+            var marker_1f1eee9089eb5cc9f0080007b36630d2 = L.marker(
+                [41.900891379294286, -87.62391675025853],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_2d4a62c46ed7b61e765dcf6c8c1d58b9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:purple\"\u003e\u003cb\u003e4\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1f1eee9089eb5cc9f0080007b36630d2.setIcon(div_icon_2d4a62c46ed7b61e765dcf6c8c1d58b9);
+            
+    
+            var circle_e6c43739e3363ab424fb2bcbfc5e6f5d = L.circle(
+                [41.8810317, -87.62408432],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_583073a36726b58b242880683ceb88a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29ab97bb6e9dd156e59360a0504bcc4e = $(`<div id="html_29ab97bb6e9dd156e59360a0504bcc4e" style="width: 100.0%; height: 100.0%;">#5 Millennium Park → Millennium Park (2905 rides)</div>`)[0];
+                popup_583073a36726b58b242880683ceb88a1.setContent(html_29ab97bb6e9dd156e59360a0504bcc4e);
+            
+        
+
+        circle_e6c43739e3363ab424fb2bcbfc5e6f5d.bindPopup(popup_583073a36726b58b242880683ceb88a1)
+        ;
+
+        
+    
+    
+            var marker_48507d070c41cfaf9584b746e785167b = L.marker(
+                [41.88086912139214, -87.62423608165801],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_15d639da96d2f2e22e8295a66a1fbb7f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:orange\"\u003e\u003cb\u003e5\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_48507d070c41cfaf9584b746e785167b.setIcon(div_icon_15d639da96d2f2e22e8295a66a1fbb7f);
+            
+    
+            var circle_e315887efdae41204f437157a0cf516b = L.circle(
+                [41.886976, -87.612813],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_4c455c517c178363b15c642f0f0c7cd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48bf1c9315071d2b285d2cf05afee25b = $(`<div id="html_48bf1c9315071d2b285d2cf05afee25b" style="width: 100.0%; height: 100.0%;">#6 Dusable Harbor → Dusable Harbor (2791 rides)</div>`)[0];
+                popup_4c455c517c178363b15c642f0f0c7cd0.setContent(html_48bf1c9315071d2b285d2cf05afee25b);
+            
+        
+
+        circle_e315887efdae41204f437157a0cf516b.bindPopup(popup_4c455c517c178363b15c642f0f0c7cd0)
+        ;
+
+        
+    
+    
+            var marker_2379d9b278f38b3844b9b1a8f9f13cb6 = L.marker(
+                [41.887018316080535, -87.61284803504566],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_96cfe63b1174c56d3f58188eebb8e8b2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkred\"\u003e\u003cb\u003e6\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_2379d9b278f38b3844b9b1a8f9f13cb6.setIcon(div_icon_96cfe63b1174c56d3f58188eebb8e8b2);
+            
+    
+            ant_path_caea74aabe8cc291337bbdbcac072ee2 = L.polyline.antPath(
+              [[41.892278, -87.612043], [41.880958, -87.616743]],
+              {
+  "stroke": true,
+  "color": "lightblue",
+  "weight": 3.128702886675911,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_2c452dfa2d7163892af10d9a207ad1ee = L.marker(
+                [41.886530909886226, -87.61424939483595],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_f335dca136580256b46fc84505856e26 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:lightblue\"\u003e\u003cb\u003e7\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_7aba704b03f8fc1882e1ba2f72484c9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_605a6c6d102ce29bf9fc633d5401dbff = $(`<div id="html_605a6c6d102ce29bf9fc633d5401dbff" style="width: 100.0%; height: 100.0%;">#7 Streeter Dr & Grand Ave → DuSable Lake Shore Dr & Monroe St (2482 rides)</div>`)[0];
+                popup_7aba704b03f8fc1882e1ba2f72484c9e.setContent(html_605a6c6d102ce29bf9fc633d5401dbff);
+            
+        
+
+        marker_2c452dfa2d7163892af10d9a207ad1ee.bindPopup(popup_7aba704b03f8fc1882e1ba2f72484c9e)
+        ;
+
+        
+    
+    
+                marker_2c452dfa2d7163892af10d9a207ad1ee.setIcon(div_icon_f335dca136580256b46fc84505856e26);
+            
+    
+            ant_path_ac5e241e8e9a1d770023c7ab635be70c = L.polyline.antPath(
+              [[41.886976, -87.612813], [41.892278, -87.612043]],
+              {
+  "stroke": true,
+  "color": "lightgreen",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightgreen",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_820ba5088ad90864b3963d7fd0762a01 = L.marker(
+                [41.88953836468031, -87.61242601687923],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_2100a08582c9c989a9806d9e6cdb250b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:lightgreen\"\u003e\u003cb\u003e8\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_6791154dd91876c4235b27898e5910ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1540fb136851b446fcbebb0bbe5e75f8 = $(`<div id="html_1540fb136851b446fcbebb0bbe5e75f8" style="width: 100.0%; height: 100.0%;">#8 Dusable Harbor → Streeter Dr & Grand Ave (2196 rides)</div>`)[0];
+                popup_6791154dd91876c4235b27898e5910ef.setContent(html_1540fb136851b446fcbebb0bbe5e75f8);
+            
+        
+
+        marker_820ba5088ad90864b3963d7fd0762a01.bindPopup(popup_6791154dd91876c4235b27898e5910ef)
+        ;
+
+        
+    
+    
+                marker_820ba5088ad90864b3963d7fd0762a01.setIcon(div_icon_2100a08582c9c989a9806d9e6cdb250b);
+            
+    
+            ant_path_f4cbaa4b87119032da036c04cbfe6153 = L.polyline.antPath(
+              [[41.86722595682, -87.6153553902], [41.880958, -87.616743]],
+              {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_4bf0b7a83ff57104b14d6ec18a1c9b9d = L.marker(
+                [41.87409145328834, -87.61623969074817],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_a79da3a079228e87bee22a347a6745b5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:black\"\u003e\u003cb\u003e9\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ad2a0ddeb5bd099b6b8d44ef86f80b49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39fecf4a05972cdff2dd7289853a8d5d = $(`<div id="html_39fecf4a05972cdff2dd7289853a8d5d" style="width: 100.0%; height: 100.0%;">#9 Shedd Aquarium → DuSable Lake Shore Dr & Monroe St (2159 rides)</div>`)[0];
+                popup_ad2a0ddeb5bd099b6b8d44ef86f80b49.setContent(html_39fecf4a05972cdff2dd7289853a8d5d);
+            
+        
+
+        marker_4bf0b7a83ff57104b14d6ec18a1c9b9d.bindPopup(popup_ad2a0ddeb5bd099b6b8d44ef86f80b49)
+        ;
+
+        
+    
+    
+                marker_4bf0b7a83ff57104b14d6ec18a1c9b9d.setIcon(div_icon_a79da3a079228e87bee22a347a6745b5);
+            
+    
+            ant_path_d76ff1698cbeb4d88f0f1a5d53dc7163 = L.polyline.antPath(
+              [[41.86722595682, -87.6153553902], [41.892278, -87.612043]],
+              {
+  "stroke": true,
+  "color": "pink",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "pink",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_06a8b28f3d9a82df230ecfc8d53b46e0 = L.marker(
+                [41.879666016542785, -87.6138691184041],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_a649bfe58279b623bcce0d3b6a997274 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:pink\"\u003e\u003cb\u003e10\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_e82d5b988e44d181fa580475140bb777 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eccfe0bd505f6952e4353d4e2c6c82bc = $(`<div id="html_eccfe0bd505f6952e4353d4e2c6c82bc" style="width: 100.0%; height: 100.0%;">#10 Shedd Aquarium → Streeter Dr & Grand Ave (2065 rides)</div>`)[0];
+                popup_e82d5b988e44d181fa580475140bb777.setContent(html_eccfe0bd505f6952e4353d4e2c6c82bc);
+            
+        
+
+        marker_06a8b28f3d9a82df230ecfc8d53b46e0.bindPopup(popup_e82d5b988e44d181fa580475140bb777)
+        ;
+
+        
+    
+    
+                marker_06a8b28f3d9a82df230ecfc8d53b46e0.setIcon(div_icon_a649bfe58279b623bcce0d3b6a997274);
+            
+    
+            ant_path_35cae4d1af8c5e0a23153a68997a2617 = L.polyline.antPath(
+              [[41.892278, -87.612043], [41.911722, -87.626804]],
+              {
+  "stroke": true,
+  "color": "cadetblue",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "cadetblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_be8d05e9c010d498b5a003d597a0aac5 = L.marker(
+                [41.90189045526027, -87.61923613250985],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_432fddf0732721cec950448be1e02ae4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:cadetblue\"\u003e\u003cb\u003e11\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_8e654280bfd4a76d9e4a5cf56027e6f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ef21eab19c27c8745b3428cd860462 = $(`<div id="html_23ef21eab19c27c8745b3428cd860462" style="width: 100.0%; height: 100.0%;">#11 Streeter Dr & Grand Ave → DuSable Lake Shore Dr & North Blvd (1939 rides)</div>`)[0];
+                popup_8e654280bfd4a76d9e4a5cf56027e6f8.setContent(html_23ef21eab19c27c8745b3428cd860462);
+            
+        
+
+        marker_be8d05e9c010d498b5a003d597a0aac5.bindPopup(popup_8e654280bfd4a76d9e4a5cf56027e6f8)
+        ;
+
+        
+    
+    
+                marker_be8d05e9c010d498b5a003d597a0aac5.setIcon(div_icon_432fddf0732721cec950448be1e02ae4);
+            
+    
+            ant_path_6bc73b9f3e25243e28aa73ae6b6895da = L.polyline.antPath(
+              [[41.892278, -87.612043], [41.8810317, -87.62408432]],
+              {
+  "stroke": true,
+  "color": "darkblue",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_4d89ccd207234bcd5ac9c1196db09d9a = L.marker(
+                [41.88669488782244, -87.6181155931343],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_76b161c55427c24e5e2f05e5ed957396 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkblue\"\u003e\u003cb\u003e12\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_42a75b20a15a831c3debe04a2be620f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae8be23be9a58266b9a8252efb265cfc = $(`<div id="html_ae8be23be9a58266b9a8252efb265cfc" style="width: 100.0%; height: 100.0%;">#12 Streeter Dr & Grand Ave → Millennium Park (1924 rides)</div>`)[0];
+                popup_42a75b20a15a831c3debe04a2be620f0.setContent(html_ae8be23be9a58266b9a8252efb265cfc);
+            
+        
+
+        marker_4d89ccd207234bcd5ac9c1196db09d9a.bindPopup(popup_42a75b20a15a831c3debe04a2be620f0)
+        ;
+
+        
+    
+    
+                marker_4d89ccd207234bcd5ac9c1196db09d9a.setIcon(div_icon_76b161c55427c24e5e2f05e5ed957396);
+            
+    
+            var circle_48e234b0855d13c7ef4067d190f040ca = L.circle(
+                [41.963982, -87.638181],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_d23b44323f92f2fa563d8734b579ef31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fd15a4ef863e82b87b9c17e3fe3e77a = $(`<div id="html_3fd15a4ef863e82b87b9c17e3fe3e77a" style="width: 100.0%; height: 100.0%;">#13 Montrose Harbor → Montrose Harbor (1895 rides)</div>`)[0];
+                popup_d23b44323f92f2fa563d8734b579ef31.setContent(html_3fd15a4ef863e82b87b9c17e3fe3e77a);
+            
+        
+
+        circle_48e234b0855d13c7ef4067d190f040ca.bindPopup(popup_d23b44323f92f2fa563d8734b579ef31)
+        ;
+
+        
+    
+    
+            var marker_48ec06467384e2db2b9f48e8651223bf = L.marker(
+                [41.964071310216966, -87.63822724455298],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_97c6d7c8d595ab576bb02c16aed21bff = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkgreen\"\u003e\u003cb\u003e13\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_48ec06467384e2db2b9f48e8651223bf.setIcon(div_icon_97c6d7c8d595ab576bb02c16aed21bff);
+            
+    
+            var circle_16e591ee362c1794fc02b03860ac40ef = L.circle(
+                [41.911722, -87.626804],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_ea9b7e96a8f239a06a3ef70bdaf33cc1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_683bb56df293d2bb33e7c8057ba02001 = $(`<div id="html_683bb56df293d2bb33e7c8057ba02001" style="width: 100.0%; height: 100.0%;">#14 DuSable Lake Shore Dr & North Blvd → DuSable Lake Shore Dr & North Blvd (1877 rides)</div>`)[0];
+                popup_ea9b7e96a8f239a06a3ef70bdaf33cc1.setContent(html_683bb56df293d2bb33e7c8057ba02001);
+            
+        
+
+        circle_16e591ee362c1794fc02b03860ac40ef.bindPopup(popup_ea9b7e96a8f239a06a3ef70bdaf33cc1)
+        ;
+
+        
+    
+    
+            var marker_a651abfb8290ca03cbca3d0dca1177c9 = L.marker(
+                [41.911907663476384, -87.6268485359442],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_ecdbaaaa0f004d4b2a1008a71c1bf53e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:red\"\u003e\u003cb\u003e14\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a651abfb8290ca03cbca3d0dca1177c9.setIcon(div_icon_ecdbaaaa0f004d4b2a1008a71c1bf53e);
+            
+    
+            ant_path_dc51f06e20a717d8cb0f87c88455fce4 = L.polyline.antPath(
+              [[41.892278, -87.612043], [41.90096039, -87.62377664]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_3eb356fe6dd4613fd30beaafc2a04e74 = L.marker(
+                [41.89644731438416, -87.61761249927258],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_87f4eb044d37050156c6c04de402c3e4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:blue\"\u003e\u003cb\u003e15\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_32304628ac829e8e00c3892a7d55f230 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e437125d5ef978b40521f1cb0b2b10e3 = $(`<div id="html_e437125d5ef978b40521f1cb0b2b10e3" style="width: 100.0%; height: 100.0%;">#15 Streeter Dr & Grand Ave → Michigan Ave & Oak St (1789 rides)</div>`)[0];
+                popup_32304628ac829e8e00c3892a7d55f230.setContent(html_e437125d5ef978b40521f1cb0b2b10e3);
+            
+        
+
+        marker_3eb356fe6dd4613fd30beaafc2a04e74.bindPopup(popup_32304628ac829e8e00c3892a7d55f230)
+        ;
+
+        
+    
+    
+                marker_3eb356fe6dd4613fd30beaafc2a04e74.setIcon(div_icon_87f4eb044d37050156c6c04de402c3e4);
+            
+    
+            ant_path_0b29c468fed63b4e9983e276e3b76750 = L.polyline.antPath(
+              [[41.880958, -87.616743], [41.86722595682, -87.6153553902]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_4cb00ce8c2edf987d71d55031a00a611 = L.marker(
+                [41.87407143856657, -87.61614570635295],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_5abfed973ee2b5e434feaf00b352881f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:green\"\u003e\u003cb\u003e16\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_903d4e6720e5be5fa0ce2fdf3cd98374 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72f3c6d9dfea22d66975bafa7ba8673c = $(`<div id="html_72f3c6d9dfea22d66975bafa7ba8673c" style="width: 100.0%; height: 100.0%;">#16 DuSable Lake Shore Dr & Monroe St → Shedd Aquarium (1753 rides)</div>`)[0];
+                popup_903d4e6720e5be5fa0ce2fdf3cd98374.setContent(html_72f3c6d9dfea22d66975bafa7ba8673c);
+            
+        
+
+        marker_4cb00ce8c2edf987d71d55031a00a611.bindPopup(popup_903d4e6720e5be5fa0ce2fdf3cd98374)
+        ;
+
+        
+    
+    
+                marker_4cb00ce8c2edf987d71d55031a00a611.setIcon(div_icon_5abfed973ee2b5e434feaf00b352881f);
+            
+    
+            var circle_0663fff1ac1414080ba53e5e02802e69 = L.circle(
+                [41.872773, -87.623981],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_9c9fcfac90be67f547951e39e71848ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d74792e4e50d0f20b9b6dc3cafbecb7 = $(`<div id="html_5d74792e4e50d0f20b9b6dc3cafbecb7" style="width: 100.0%; height: 100.0%;">#17 Michigan Ave & 8th St → Michigan Ave & 8th St (1717 rides)</div>`)[0];
+                popup_9c9fcfac90be67f547951e39e71848ee.setContent(html_5d74792e4e50d0f20b9b6dc3cafbecb7);
+            
+        
+
+        circle_0663fff1ac1414080ba53e5e02802e69.bindPopup(popup_9c9fcfac90be67f547951e39e71848ee)
+        ;
+
+        
+    
+    
+            var marker_a12e57553974072303c0135b491aedbf = L.marker(
+                [41.87262027023261, -87.62409871018224],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_45eb893c31b707ea24dcb35ff33bf9cf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:purple\"\u003e\u003cb\u003e17\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a12e57553974072303c0135b491aedbf.setIcon(div_icon_45eb893c31b707ea24dcb35ff33bf9cf);
+            
+    
+            ant_path_b7cd88aa3aa733e4c51853fb69bc82e6 = L.polyline.antPath(
+              [[41.880958, -87.616743], [41.886976, -87.612813]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_4bd01b44cdba372dc1d8c5f960130acb = L.marker(
+                [41.88409340079328, -87.61479619405245],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_eb167509e2b6f8bb7c8bbeb8ae89d529 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:orange\"\u003e\u003cb\u003e18\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f5a919843eabeab6aa04e9893679e808 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3262905c2f255dc50ef829ccb48a78b = $(`<div id="html_a3262905c2f255dc50ef829ccb48a78b" style="width: 100.0%; height: 100.0%;">#18 DuSable Lake Shore Dr & Monroe St → Dusable Harbor (1715 rides)</div>`)[0];
+                popup_f5a919843eabeab6aa04e9893679e808.setContent(html_a3262905c2f255dc50ef829ccb48a78b);
+            
+        
+
+        marker_4bd01b44cdba372dc1d8c5f960130acb.bindPopup(popup_f5a919843eabeab6aa04e9893679e808)
+        ;
+
+        
+    
+    
+                marker_4bd01b44cdba372dc1d8c5f960130acb.setIcon(div_icon_eb167509e2b6f8bb7c8bbeb8ae89d529);
+            
+    
+            var circle_05483bb64345ff55ff1b5d3a7849563d = L.circle(
+                [41.86722595682, -87.6153553902],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+        var popup_2ba84b5adbf5ccf82aea7a14347e501c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c54d5e1e86bec80e03531a87ab34697b = $(`<div id="html_c54d5e1e86bec80e03531a87ab34697b" style="width: 100.0%; height: 100.0%;">#19 Shedd Aquarium → Shedd Aquarium (1687 rides)</div>`)[0];
+                popup_2ba84b5adbf5ccf82aea7a14347e501c.setContent(html_c54d5e1e86bec80e03531a87ab34697b);
+            
+        
+
+        circle_05483bb64345ff55ff1b5d3a7849563d.bindPopup(popup_2ba84b5adbf5ccf82aea7a14347e501c)
+        ;
+
+        
+    
+    
+            var marker_fca05557c2d8ebc69f104e2770fb938b = L.marker(
+                [41.86711554422595, -87.61550533509858],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_34c1e11c5519586a61a1aae0c5524b19 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkred\"\u003e\u003cb\u003e19\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_fca05557c2d8ebc69f104e2770fb938b.setIcon(div_icon_34c1e11c5519586a61a1aae0c5524b19);
+            
+    
+            ant_path_18c61ec52638040f9c55f7d7d7795eb4 = L.polyline.antPath(
+              [[41.8810317, -87.62408432], [41.892278, -87.612043]],
+              {
+  "stroke": true,
+  "color": "lightblue",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var marker_0b6e7ef9ea44b156379b0517e4aa35db = L.marker(
+                [41.886415981593096, -87.61820439485246],
+                {
+}
+            ).addTo(map_51384e7e9fe10466d7f687cdada2aad6);
+        
+    
+            var div_icon_3906ecb8f1ac1d38a5a8700600b9d42a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:lightblue\"\u003e\u003cb\u003e20\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_84aec19196dcd03506edcf85078a7891 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cec4e7fda6580b9c5207a72620891ecc = $(`<div id="html_cec4e7fda6580b9c5207a72620891ecc" style="width: 100.0%; height: 100.0%;">#20 Millennium Park → Streeter Dr & Grand Ave (1650 rides)</div>`)[0];
+                popup_84aec19196dcd03506edcf85078a7891.setContent(html_cec4e7fda6580b9c5207a72620891ecc);
+            
+        
+
+        marker_0b6e7ef9ea44b156379b0517e4aa35db.bindPopup(popup_84aec19196dcd03506edcf85078a7891)
+        ;
+
+        
+    
+    
+                marker_0b6e7ef9ea44b156379b0517e4aa35db.setIcon(div_icon_3906ecb8f1ac1d38a5a8700600b9d42a);
+            
+</script>
+</html>

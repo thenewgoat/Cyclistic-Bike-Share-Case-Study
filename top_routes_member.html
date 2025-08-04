@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62450bf8d05f213c66e4a6d032e72500 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_62450bf8d05f213c66e4a6d032e72500" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_62450bf8d05f213c66e4a6d032e72500 = L.map(
+                "map_62450bf8d05f213c66e4a6d032e72500",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_62450bf8d05f213c66e4a6d032e72500);
+
+            
+
+        
+    
+            var tile_layer_c51c355aa742b1de0abe431e421f335e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c51c355aa742b1de0abe431e421f335e.addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            ant_path_b28a99737e6816b9911ae4ac0c769a3e = L.polyline.antPath(
+              [[41.834734, -87.625813], [41.8349, -87.61793]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 10.0,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_b591145c140528069d6fc8f290ca1492 = L.marker(
+                [41.83486991703671, -87.621729844121],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_05fba65f0708cdbc35b44f02bab9d2d3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:red\"\u003e\u003cb\u003e1\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_2ae5c4f298b0dd3002f0a5f1f17936a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c681bc324e2219c1bf070255068782dc = $(`<div id="html_c681bc324e2219c1bf070255068782dc" style="width: 100.0%; height: 100.0%;">#1 State St & 33rd St → Calumet Ave & 33rd St (4111 rides)</div>`)[0];
+                popup_2ae5c4f298b0dd3002f0a5f1f17936a1.setContent(html_c681bc324e2219c1bf070255068782dc);
+            
+        
+
+        marker_b591145c140528069d6fc8f290ca1492.bindPopup(popup_2ae5c4f298b0dd3002f0a5f1f17936a1)
+        ;
+
+        
+    
+    
+                marker_b591145c140528069d6fc8f290ca1492.setIcon(div_icon_05fba65f0708cdbc35b44f02bab9d2d3);
+            
+    
+            ant_path_a28098243e725e019b7061486e5fc71b = L.polyline.antPath(
+              [[41.8349, -87.61793], [41.834734, -87.625813]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 9.917295062028703,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_96a5d5352523e34c6076c6a9b634ae1b = L.marker(
+                [41.8345504065497, -87.62214690463666],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_75306b92d852bb8dbf93c447dd7d4e94 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:blue\"\u003e\u003cb\u003e2\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_7b32dd5db2a5205931bc8def33b4d568 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b619039fbf4548d80193393928f9714 = $(`<div id="html_1b619039fbf4548d80193393928f9714" style="width: 100.0%; height: 100.0%;">#2 Calumet Ave & 33rd St → State St & 33rd St (4077 rides)</div>`)[0];
+                popup_7b32dd5db2a5205931bc8def33b4d568.setContent(html_1b619039fbf4548d80193393928f9714);
+            
+        
+
+        marker_96a5d5352523e34c6076c6a9b634ae1b.bindPopup(popup_7b32dd5db2a5205931bc8def33b4d568)
+        ;
+
+        
+    
+    
+                marker_96a5d5352523e34c6076c6a9b634ae1b.setIcon(div_icon_75306b92d852bb8dbf93c447dd7d4e94);
+            
+    
+            ant_path_28689cf2aaa68cdb6fe5be09f134fd09 = L.polyline.antPath(
+              [[41.78509714636, -87.6010727606], [41.79430062054, -87.6014497734]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 9.554852833860375,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_f6a41a132dec7d94b3ef3d98e456a6b8 = L.marker(
+                [41.78952490189777, -87.6012219827257],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_4a45f14206b5ffaf9b74e3cfb02e3326 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:green\"\u003e\u003cb\u003e3\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_84bc2c53e63dca4c4f6fb0052258314b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dea66b5fd4022a0390e13f1605a83c5 = $(`<div id="html_0dea66b5fd4022a0390e13f1605a83c5" style="width: 100.0%; height: 100.0%;">#3 Ellis Ave & 60th St → Ellis Ave & 55th St (3928 rides)</div>`)[0];
+                popup_84bc2c53e63dca4c4f6fb0052258314b.setContent(html_0dea66b5fd4022a0390e13f1605a83c5);
+            
+        
+
+        marker_f6a41a132dec7d94b3ef3d98e456a6b8.bindPopup(popup_84bc2c53e63dca4c4f6fb0052258314b)
+        ;
+
+        
+    
+    
+                marker_f6a41a132dec7d94b3ef3d98e456a6b8.setIcon(div_icon_4a45f14206b5ffaf9b74e3cfb02e3326);
+            
+    
+            ant_path_7f3d755157adc3ee1a47da5461cc6b40 = L.polyline.antPath(
+              [[41.79430062054, -87.6014497734], [41.78509714636, -87.6010727606]],
+              {
+  "stroke": true,
+  "color": "purple",
+  "weight": 9.056190707856969,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_6c3188f484e048e0aaef735ba5d34408 = L.marker(
+                [41.789642273472936, -87.60140196349086],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_3e6bae8347662dfc98dad304dfc28cbe = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:purple\"\u003e\u003cb\u003e4\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_2f4a44db9010cb2e9c381268fca11cef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a00cb245a4cc1086f6dc4a164815c8b2 = $(`<div id="html_a00cb245a4cc1086f6dc4a164815c8b2" style="width: 100.0%; height: 100.0%;">#4 Ellis Ave & 55th St → Ellis Ave & 60th St (3723 rides)</div>`)[0];
+                popup_2f4a44db9010cb2e9c381268fca11cef.setContent(html_a00cb245a4cc1086f6dc4a164815c8b2);
+            
+        
+
+        marker_6c3188f484e048e0aaef735ba5d34408.bindPopup(popup_2f4a44db9010cb2e9c381268fca11cef)
+        ;
+
+        
+    
+    
+                marker_6c3188f484e048e0aaef735ba5d34408.setIcon(div_icon_3e6bae8347662dfc98dad304dfc28cbe);
+            
+    
+            ant_path_2296406183a46ffe964507c841a6aab2 = L.polyline.antPath(
+              [[41.791478, -87.599861], [41.78509714636, -87.6010727606]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 8.922403308197518,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_31b8d39f03f190ba5ebb36098ca2398c = L.marker(
+                [41.78813256129366, -87.6003378101462],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_701868e3ec2b5edc691e42d2dcc989e7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:orange\"\u003e\u003cb\u003e5\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4bd5e6cd4007dd5de9a4c0d7cf15c61e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06fc488a2e6a80201e1a7d548107ff67 = $(`<div id="html_06fc488a2e6a80201e1a7d548107ff67" style="width: 100.0%; height: 100.0%;">#5 University Ave & 57th St → Ellis Ave & 60th St (3668 rides)</div>`)[0];
+                popup_4bd5e6cd4007dd5de9a4c0d7cf15c61e.setContent(html_06fc488a2e6a80201e1a7d548107ff67);
+            
+        
+
+        marker_31b8d39f03f190ba5ebb36098ca2398c.bindPopup(popup_4bd5e6cd4007dd5de9a4c0d7cf15c61e)
+        ;
+
+        
+    
+    
+                marker_31b8d39f03f190ba5ebb36098ca2398c.setIcon(div_icon_701868e3ec2b5edc691e42d2dcc989e7);
+            
+    
+            ant_path_d9a9e9cc06704461b2d4fbf4fd2b6911 = L.polyline.antPath(
+              [[41.78509714636, -87.6010727606], [41.791478, -87.599861]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 8.829968377523716,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_0f3e9ee49bf28af5626122b2c1e103b9 = L.marker(
+                [41.788569986411936, -87.60044571647266],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_67b799f2f7ad8c63ca61ffefb9988609 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkred\"\u003e\u003cb\u003e6\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a598f8d0b5f0384b3774b3cbd3edd41f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a35cf5770ba95126ce00a317f98fbf05 = $(`<div id="html_a35cf5770ba95126ce00a317f98fbf05" style="width: 100.0%; height: 100.0%;">#6 Ellis Ave & 60th St → University Ave & 57th St (3630 rides)</div>`)[0];
+                popup_a598f8d0b5f0384b3774b3cbd3edd41f.setContent(html_a35cf5770ba95126ce00a317f98fbf05);
+            
+        
+
+        marker_0f3e9ee49bf28af5626122b2c1e103b9.bindPopup(popup_a598f8d0b5f0384b3774b3cbd3edd41f)
+        ;
+
+        
+    
+    
+                marker_0f3e9ee49bf28af5626122b2c1e103b9.setIcon(div_icon_67b799f2f7ad8c63ca61ffefb9988609);
+            
+    
+            ant_path_1afc54d7dcfc4c640d4e4932473cc4be = L.polyline.antPath(
+              [[41.87222873224032, -87.66136385500431], [41.871737, -87.65103]],
+              {
+  "stroke": true,
+  "color": "lightblue",
+  "weight": 5.288251033811725,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_2989798f0a8f34611f5d42d0938a83ca = L.marker(
+                [41.872061161796516, -87.65622253912557],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_e48253d756b09a7e7fc54ba730622668 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:lightblue\"\u003e\u003cb\u003e7\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_cc8a9779c77ee1fc82e57d7ad0a0901d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb277067965c9e3f8d3bbcab4db46551 = $(`<div id="html_bb277067965c9e3f8d3bbcab4db46551" style="width: 100.0%; height: 100.0%;">#7 Loomis St & Lexington St → Morgan St & Polk St (2174 rides)</div>`)[0];
+                popup_cc8a9779c77ee1fc82e57d7ad0a0901d.setContent(html_bb277067965c9e3f8d3bbcab4db46551);
+            
+        
+
+        marker_2989798f0a8f34611f5d42d0938a83ca.bindPopup(popup_cc8a9779c77ee1fc82e57d7ad0a0901d)
+        ;
+
+        
+    
+    
+                marker_2989798f0a8f34611f5d42d0938a83ca.setIcon(div_icon_e48253d756b09a7e7fc54ba730622668);
+            
+    
+            ant_path_1897267414d77c7657a9fa3b042c4677 = L.polyline.antPath(
+              [[41.871737, -87.65103], [41.87222873224032, -87.66136385500431]],
+              {
+  "stroke": true,
+  "color": "lightgreen",
+  "weight": 4.733641449768912,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightgreen",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_f305494c1fd13a3cbdeca95981647d99 = L.marker(
+                [41.871912655771155, -87.65599596631347],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_6882889831b561355eec61ad5957cb42 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:lightgreen\"\u003e\u003cb\u003e8\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_aabb1ef33610811f7d2f980ab5527021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_818dd6efd71b55c5d55b567c5fd23888 = $(`<div id="html_818dd6efd71b55c5d55b567c5fd23888" style="width: 100.0%; height: 100.0%;">#8 Morgan St & Polk St → Loomis St & Lexington St (1946 rides)</div>`)[0];
+                popup_aabb1ef33610811f7d2f980ab5527021.setContent(html_818dd6efd71b55c5d55b567c5fd23888);
+            
+        
+
+        marker_f305494c1fd13a3cbdeca95981647d99.bindPopup(popup_aabb1ef33610811f7d2f980ab5527021)
+        ;
+
+        
+    
+    
+                marker_f305494c1fd13a3cbdeca95981647d99.setIcon(div_icon_6882889831b561355eec61ad5957cb42);
+            
+    
+            ant_path_aa034d28dace374ee2c560779a4146a8 = L.polyline.antPath(
+              [[41.787877, -87.590461], [41.791478, -87.599861]],
+              {
+  "stroke": true,
+  "color": "black",
+  "weight": 4.162004378496716,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_331f7af1f010394500509bae0a2a3b49 = L.marker(
+                [41.78963995983763, -87.59493541128423],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_5e28263df28344c2ddd0d1d216fdd466 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:black\"\u003e\u003cb\u003e9\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_cd39de39d7d7b645b8b11bac3f8f7b77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49a4b3a2680c2826036af8c980cc984a = $(`<div id="html_49a4b3a2680c2826036af8c980cc984a" style="width: 100.0%; height: 100.0%;">#9 Blackstone Ave & 59th St → University Ave & 57th St (1711 rides)</div>`)[0];
+                popup_cd39de39d7d7b645b8b11bac3f8f7b77.setContent(html_49a4b3a2680c2826036af8c980cc984a);
+            
+        
+
+        marker_331f7af1f010394500509bae0a2a3b49.bindPopup(popup_cd39de39d7d7b645b8b11bac3f8f7b77)
+        ;
+
+        
+    
+    
+                marker_331f7af1f010394500509bae0a2a3b49.setIcon(div_icon_5e28263df28344c2ddd0d1d216fdd466);
+            
+    
+            ant_path_5de9dbcd641b99da9085651386c0465e = L.polyline.antPath(
+              [[41.791478, -87.599861], [41.7994549, -87.5947779]],
+              {
+  "stroke": true,
+  "color": "pink",
+  "weight": 3.9503770372172218,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "pink",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_a6bf89e9e084c8499fe7c566df658c36 = L.marker(
+                [41.795174201017055, -87.59751059346348],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_9f6ffea53c4e0fa199a29f8784fcbd08 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:pink\"\u003e\u003cb\u003e10\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4110748c7e9a69ba34685774e5481a14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9fc967ec1b2d850dbaf791eefa14b4e = $(`<div id="html_f9fc967ec1b2d850dbaf791eefa14b4e" style="width: 100.0%; height: 100.0%;">#10 University Ave & 57th St → Kimbark Ave & 53rd St (1624 rides)</div>`)[0];
+                popup_4110748c7e9a69ba34685774e5481a14.setContent(html_f9fc967ec1b2d850dbaf791eefa14b4e);
+            
+        
+
+        marker_a6bf89e9e084c8499fe7c566df658c36.bindPopup(popup_4110748c7e9a69ba34685774e5481a14)
+        ;
+
+        
+    
+    
+                marker_a6bf89e9e084c8499fe7c566df658c36.setIcon(div_icon_9f6ffea53c4e0fa199a29f8784fcbd08);
+            
+    
+            ant_path_596a0375b22f30e9016ea2e60fa9b65c = L.polyline.antPath(
+              [[41.7994549, -87.5947779], [41.791478, -87.599861]],
+              {
+  "stroke": true,
+  "color": "cadetblue",
+  "weight": 3.899294575529068,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "cadetblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_a0e07205f32415b39152634f84654669 = L.marker(
+                [41.795603305338574, -87.59746610559782],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_c336511188ac6454710c787f5626c7fc = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:cadetblue\"\u003e\u003cb\u003e11\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_117962427b62f138a7966eba2660a6d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ef808cc3f8e0aa3cfa971600b598016 = $(`<div id="html_7ef808cc3f8e0aa3cfa971600b598016" style="width: 100.0%; height: 100.0%;">#11 Kimbark Ave & 53rd St → University Ave & 57th St (1603 rides)</div>`)[0];
+                popup_117962427b62f138a7966eba2660a6d1.setContent(html_7ef808cc3f8e0aa3cfa971600b598016);
+            
+        
+
+        marker_a0e07205f32415b39152634f84654669.bindPopup(popup_117962427b62f138a7966eba2660a6d1)
+        ;
+
+        
+    
+    
+                marker_a0e07205f32415b39152634f84654669.setIcon(div_icon_c336511188ac6454710c787f5626c7fc);
+            
+    
+            ant_path_abb751a33ac32483e3e2fc819dfa958f = L.polyline.antPath(
+              [[41.791478, -87.599861], [41.787877, -87.590461]],
+              {
+  "stroke": true,
+  "color": "darkblue",
+  "weight": 3.7922646558015085,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_d4b0bab7b22ef823e07a7658a82ee090 = L.marker(
+                [41.78954419293409, -87.59526943133994],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_6d7748b1d5e84badc17b7677758c467e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkblue\"\u003e\u003cb\u003e12\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3931674d8d9da6436bde0d00bf95e733 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf857593dce4762f253dec867b6769aa = $(`<div id="html_bf857593dce4762f253dec867b6769aa" style="width: 100.0%; height: 100.0%;">#12 University Ave & 57th St → Blackstone Ave & 59th St (1559 rides)</div>`)[0];
+                popup_3931674d8d9da6436bde0d00bf95e733.setContent(html_bf857593dce4762f253dec867b6769aa);
+            
+        
+
+        marker_d4b0bab7b22ef823e07a7658a82ee090.bindPopup(popup_3931674d8d9da6436bde0d00bf95e733)
+        ;
+
+        
+    
+    
+                marker_d4b0bab7b22ef823e07a7658a82ee090.setIcon(div_icon_6d7748b1d5e84badc17b7677758c467e);
+            
+    
+            ant_path_0ff3cac361a40a4a343bab1da70d1374 = L.polyline.antPath(
+              [[41.842052, -87.617], [41.834734, -87.625813]],
+              {
+  "stroke": true,
+  "color": "darkgreen",
+  "weight": 3.3471174896618825,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkgreen",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_31ba6ac883d6758066384edb04838e44 = L.marker(
+                [41.83822513118577, -87.62140946032437],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_d3a0e997b99264efdede40de6ab61c47 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkgreen\"\u003e\u003cb\u003e13\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_27e67544ae3d159889aec42917a11a71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1297dcece88b0a32876fc18084645e5c = $(`<div id="html_1297dcece88b0a32876fc18084645e5c" style="width: 100.0%; height: 100.0%;">#13 MLK Jr Dr & 29th St → State St & 33rd St (1376 rides)</div>`)[0];
+                popup_27e67544ae3d159889aec42917a11a71.setContent(html_1297dcece88b0a32876fc18084645e5c);
+            
+        
+
+        marker_31ba6ac883d6758066384edb04838e44.bindPopup(popup_27e67544ae3d159889aec42917a11a71)
+        ;
+
+        
+    
+    
+                marker_31ba6ac883d6758066384edb04838e44.setIcon(div_icon_d3a0e997b99264efdede40de6ab61c47);
+            
+    
+            ant_path_e89c36b883d46d0e925fb247b9031496 = L.polyline.antPath(
+              [[41.79430062054, -87.6014497734], [41.7994549, -87.5947779]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 3.2668450498662125,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_cfc608ce00ecb62cc9a8735091bf9762 = L.marker(
+                [41.79668501549011, -87.5982814791199],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_4b4b9b1e98f87b1351f71cc7a18529a2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:red\"\u003e\u003cb\u003e14\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_6620ff96df3834a61e45d6f9f21ce06c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39c7b8914ba1b077463c5f23c2746123 = $(`<div id="html_39c7b8914ba1b077463c5f23c2746123" style="width: 100.0%; height: 100.0%;">#14 Ellis Ave & 55th St → Kimbark Ave & 53rd St (1343 rides)</div>`)[0];
+                popup_6620ff96df3834a61e45d6f9f21ce06c.setContent(html_39c7b8914ba1b077463c5f23c2746123);
+            
+        
+
+        marker_cfc608ce00ecb62cc9a8735091bf9762.bindPopup(popup_6620ff96df3834a61e45d6f9f21ce06c)
+        ;
+
+        
+    
+    
+                marker_cfc608ce00ecb62cc9a8735091bf9762.setIcon(div_icon_4b4b9b1e98f87b1351f71cc7a18529a2);
+            
+    
+            ant_path_e12c4e9d602d954126d10a8942bf5a2f = L.polyline.antPath(
+              [[41.836208, -87.613533], [41.834734, -87.625813]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3.2254925808805646,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_7fa0fae1d1f84b77148f626b2fc64c7f = L.marker(
+                [41.83574801031873, -87.61965246054763],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_1d07a8d587514315d12b652743da8282 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:blue\"\u003e\u003cb\u003e15\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_dc4c3b290e32ba2bf481e5e248dbcda9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75805ea2330cbb9e53bb14d13dc478aa = $(`<div id="html_75805ea2330cbb9e53bb14d13dc478aa" style="width: 100.0%; height: 100.0%;">#15 Rhodes Ave & 32nd St → State St & 33rd St (1326 rides)</div>`)[0];
+                popup_dc4c3b290e32ba2bf481e5e248dbcda9.setContent(html_75805ea2330cbb9e53bb14d13dc478aa);
+            
+        
+
+        marker_7fa0fae1d1f84b77148f626b2fc64c7f.bindPopup(popup_dc4c3b290e32ba2bf481e5e248dbcda9)
+        ;
+
+        
+    
+    
+                marker_7fa0fae1d1f84b77148f626b2fc64c7f.setIcon(div_icon_1d07a8d587514315d12b652743da8282);
+            
+    
+            ant_path_2d4d163eb8cd774a6e113272735e8177 = L.polyline.antPath(
+              [[41.788746, -87.601334], [41.78509714636, -87.6010727606]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 3.1719776210167843,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_bf608e04324bb9c01217ee456f6b6dd5 = L.marker(
+                [41.78663958903366, -87.60092394389996],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_800b004f7b8c645dfaa1321ced833b40 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:green\"\u003e\u003cb\u003e16\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b99d0e57931d16ec3a96b2fdeaca1cbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73fc8597ea6a87a331bddc89fbf5f571 = $(`<div id="html_73fc8597ea6a87a331bddc89fbf5f571" style="width: 100.0%; height: 100.0%;">#16 Ellis Ave & 58th St → Ellis Ave & 60th St (1304 rides)</div>`)[0];
+                popup_b99d0e57931d16ec3a96b2fdeaca1cbb.setContent(html_73fc8597ea6a87a331bddc89fbf5f571);
+            
+        
+
+        marker_bf608e04324bb9c01217ee456f6b6dd5.bindPopup(popup_b99d0e57931d16ec3a96b2fdeaca1cbb)
+        ;
+
+        
+    
+    
+                marker_bf608e04324bb9c01217ee456f6b6dd5.setIcon(div_icon_800b004f7b8c645dfaa1321ced833b40);
+            
+    
+            ant_path_ddf292edeb2b06443e6304eff0ee5599 = L.polyline.antPath(
+              [[41.78509714636, -87.6010727606], [41.788746, -87.601334]],
+              {
+  "stroke": true,
+  "color": "purple",
+  "weight": 3.142787642909268,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_20f2497490097804dd604e7692cf2d09 = L.marker(
+                [41.78665237608879, -87.60118532947843],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_5ff60991be39ca09767361979735e717 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:purple\"\u003e\u003cb\u003e17\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3a5e23c1dfee01b01ad3e80380225d07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_002a96837ba91dc90bfe5d884203abde = $(`<div id="html_002a96837ba91dc90bfe5d884203abde" style="width: 100.0%; height: 100.0%;">#17 Ellis Ave & 60th St → Ellis Ave & 58th St (1292 rides)</div>`)[0];
+                popup_3a5e23c1dfee01b01ad3e80380225d07.setContent(html_002a96837ba91dc90bfe5d884203abde);
+            
+        
+
+        marker_20f2497490097804dd604e7692cf2d09.bindPopup(popup_3a5e23c1dfee01b01ad3e80380225d07)
+        ;
+
+        
+    
+    
+                marker_20f2497490097804dd604e7692cf2d09.setIcon(div_icon_5ff60991be39ca09767361979735e717);
+            
+    
+            ant_path_f3f96bb1f07b0c49ba4307ad3a136803 = L.polyline.antPath(
+              [[41.88917683258, -87.6385057718], [41.88338, -87.64117]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_aee08280c63dfc4b9c384c108c2965c0 = L.marker(
+                [41.88610571673894, -87.64000268912079],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_db72c6beee691ddc93f4f60c1e341678 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:orange\"\u003e\u003cb\u003e18\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3a98b3171d19891126f44c97d93c7ba1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c8e8c13f896a02327ae02a0ec962436 = $(`<div id="html_6c8e8c13f896a02327ae02a0ec962436" style="width: 100.0%; height: 100.0%;">#18 Kingsbury St & Kinzie St → Clinton St & Washington Blvd (1185 rides)</div>`)[0];
+                popup_3a98b3171d19891126f44c97d93c7ba1.setContent(html_6c8e8c13f896a02327ae02a0ec962436);
+            
+        
+
+        marker_aee08280c63dfc4b9c384c108c2965c0.bindPopup(popup_3a98b3171d19891126f44c97d93c7ba1)
+        ;
+
+        
+    
+    
+                marker_aee08280c63dfc4b9c384c108c2965c0.setIcon(div_icon_db72c6beee691ddc93f4f60c1e341678);
+            
+    
+            ant_path_af140c6d43c3068c9964b37a4027b3f4 = L.polyline.antPath(
+              [[41.834734, -87.625813], [41.842052, -87.617]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_b63fea8c4086fbabbef03258fecb675a = L.marker(
+                [41.83854904275942, -87.6212611784832],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_b23e87286609e0e12c68cf5ec3635f4e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:darkred\"\u003e\u003cb\u003e19\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_84a0360595fbf97b4cf5b571a57c897b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c2191e4b2f6dbcc173e18e50765d6e4 = $(`<div id="html_1c2191e4b2f6dbcc173e18e50765d6e4" style="width: 100.0%; height: 100.0%;">#19 State St & 33rd St → MLK Jr Dr & 29th St (1155 rides)</div>`)[0];
+                popup_84a0360595fbf97b4cf5b571a57c897b.setContent(html_1c2191e4b2f6dbcc173e18e50765d6e4);
+            
+        
+
+        marker_b63fea8c4086fbabbef03258fecb675a.bindPopup(popup_84a0360595fbf97b4cf5b571a57c897b)
+        ;
+
+        
+    
+    
+                marker_b63fea8c4086fbabbef03258fecb675a.setIcon(div_icon_b23e87286609e0e12c68cf5ec3635f4e);
+            
+    
+            ant_path_d1865565fcea115c4ea3e14837a141fe = L.polyline.antPath(
+              [[41.87184, -87.64664], [41.87222873224032, -87.66136385500431]],
+              {
+  "stroke": true,
+  "color": "lightblue",
+  "weight": 3,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var marker_039db427d2817f070524e7ed0a511995 = L.marker(
+                [41.8719371116753, -87.65421053637384],
+                {
+}
+            ).addTo(map_62450bf8d05f213c66e4a6d032e72500);
+        
+    
+            var div_icon_2986fe6ae46cbc8bc018c849efb81be8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color:lightblue\"\u003e\u003cb\u003e20\u003c/b\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b2f5951cec061d691d343001c438c614 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60933f83df850ac4e1bf35cd03664fb6 = $(`<div id="html_60933f83df850ac4e1bf35cd03664fb6" style="width: 100.0%; height: 100.0%;">#20 Halsted St & Polk St → Loomis St & Lexington St (1151 rides)</div>`)[0];
+                popup_b2f5951cec061d691d343001c438c614.setContent(html_60933f83df850ac4e1bf35cd03664fb6);
+            
+        
+
+        marker_039db427d2817f070524e7ed0a511995.bindPopup(popup_b2f5951cec061d691d343001c438c614)
+        ;
+
+        
+    
+    
+                marker_039db427d2817f070524e7ed0a511995.setIcon(div_icon_2986fe6ae46cbc8bc018c849efb81be8);
+            
+</script>
+</html>
